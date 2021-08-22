@@ -1,2 +1,2 @@
 # fahiraq.github.io
-Website pertama fahira (tidak formal)
+Fahira's first website (informal website)
