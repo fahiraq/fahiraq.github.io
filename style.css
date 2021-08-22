@@ -97,3 +97,6 @@ section #text span{
     font-size: 1em;
     color: white;
 }
+img{
+    float:left;
+}
