@@ -98,5 +98,52 @@ section #text span{
     color: white;
 }
 img{
-    float:left;
+    padding-left:400px;
+}
+#ctct{
+    position: relative;
+    background: #def2f1;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+.sosmed{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #000;
+    overflow: hidden;
+    position: relative;
+    color: #094b65;
+}
+.sosmed i{
+    transition: 0.2s linear;
+    font-size: 50px;
+    line-height: 90px;
+    margin-left: 24px;
+}
+.sosmed:hover i{
+    transform: scale(1.3);
+    color: white;
+}
+.sosmed::before{
+    content:"";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+}
+#fav h1{
+    color: rgb(61, 32, 9);
+}
+footer{
+    background-color:#094b65;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    color: white;
 }
