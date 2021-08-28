@@ -2,25 +2,36 @@
 <html>
     <head>
         <title>Hero's Website</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header id="header">
             <a href="#" class="logo">HERO</a>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#header" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Favorite</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#fav">Favorite</a></li>
+                <li><a href="#ctct">Contact</a></li>
             </ul>
         </header>
         <section>
             <h2 id="text"><span>Hi! I'm Hero</span><br>Welcome, Mate!</h2>
+            <img src="bird1.png" id="bird1">
+            <img src="bird2.png" id="bird2">
+            <img src="forest.png" id="forest">
             <a href="#about" id="btn">Explore</a>
-            
+            <img src="rocks.png" id="rocks">
+            <img src="water.png" id="water">
         </section>
         <div id="about">
-            <img src="fahiround.png">
+            <h1>About Me</h1>
+            <a href="https://www.instagram.com/fahira_qaulifa/" target="_blank">
+                <img src="fahiround.png">
+            </a>
+            <br>
+            <br>
+            <br>
             <h2 class="rmdr">Hei You!</h2>
             <p>If you can open and read this website, it means that your heart is still beating.</p>
             <p>Be grateful, mate!🥳<p>
@@ -30,22 +41,24 @@
             <p>Name : Fahira Qaulifa</p>
             <p>Major : Electrical Engineer</p>
             <p>Dream : Touch a still beating heart </p>
+            <p>Domicile : Nomads 👀</p>
             <br>
             <br>
             <h2>Fun Fact</h2>
-            <p>Do you know why i introduced myself as "Hero" on the first page?</p>
+            <p>Who is Hero?</p>
             <p>Hero is a name that i made when i was kid.
             At that time, i hate the fact that i was born as a girl.
             So i did a little changes to my name, from "fahira" to "fahero".
             And the nick name would be "Hero". Sounds like a boy's name, right?😝
-            But don't worry, mate. 
+            But don't worry, mate. s
             Now i've accepted the fact that I am a woman, and I am grateful for it.</p>
             <br>
             <br>
             <h2>Interest</h2>
             <p>Iam interested in medical, programming and medical technology 🤖. 
-            So, i'm currently learning Digital Art, Python, Artificial Intelegence, HTML, CSS, and JavaScript.
-            <!--I'll spill the links where am i study that things in the Favorite section 👇--></p>
+            So, i'm currently learning Digital Art, Artificial Intelegence, Python, HTML, CSS, and JavaScript.
+            I'll spill the links where am i study that things, on the Favorite section 👇</p>
+        </div>
         <div id="fav">
             <h1>Favorite</h1>
         </div>
@@ -57,7 +70,35 @@
                 <i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/fahira-qaulifa-72a64b206" class="sosmed" target="_blank">
                 <i class="fab fa-linkedin"></i></a>
-            <a></a>
+            <a href ="#" class="sosmed" target="_blank">
+                <i class="fab fa-line"></i></a>
         </div>
-    </body>
+        <script>
+            let text = document.getElementById('text');
+            let bird1 = document.getElementById('bird1');
+            let bird2 = document.getElementById('bird2');
+            let btn = document.getElementById('btn');
+            let forest = document.getElementById('forest');
+            let rocks = document.getElementById('rocks');
+            let water = document.getElementById('water');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -0.5 + '%';
+                bird1.style.top = value * -1.5 + 'px';
+                bird1.style.left = value * 2 + 'px';
+                bird2.style.top = value * -1.5 + 'px';
+                bird2.style.left = value * -5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                rocks.style.top = value * -0.12 + 'px';
+                forest.style.top = value * 0.25 +'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body> 
+    <footer>
+        <p>Copyright@fahiraqaulifa</p>
+    </footer>
 </html>
